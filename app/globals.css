@@ -1,9 +1,13 @@
-@import url('./reset.css');
+@import url("./reset.css");
 
 :root {
-  --dark-blue: #0D85DA;
-  --blue: #57B0F1;
+  --dark-blue: #0d85da;
+  --blue: #57b0f1;
   --dark: #232323;
-  --gray: #E5E5E5;
-  --light: #ECECEC;
+  --gray: #e5e5e5;
+  --light: #ececec;
+}
+
+html {
+  scroll-behavior: smooth;
 }

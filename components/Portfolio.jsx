@@ -5,12 +5,12 @@ import NavList from "./NavList";
 
 const Portfolio = () => {
   return (
-    <article className={styles.main}>
+    <article id="works" className={styles.main}>
       <NavList />
       <header>
         <h1 style={{ width: "1440px", margin: "0 auto" }}>Works</h1>
       </header>
-      <section className={styles.section}>
+      <section id="apps" className={styles.section}>
         <header className={styles.title}>
           <h2>Apps</h2>
         </header>
@@ -37,7 +37,7 @@ const Portfolio = () => {
           content="This donation app was built for NNO and it integrates with both Stripe and PayPal using JavaScript/html/scss on the front and Node and PHP on the backend"
         />
       </section>
-      <section className={styles.section}>
+      <section id="sites" className={styles.section}>
         <header className={styles.title}>
           <h2>Sites</h2>
         </header>
@@ -117,16 +117,12 @@ const Portfolio = () => {
           name="Quirkable.io"
           client="Quirkable"
           image="/images/quirkable.png"
-          icon={[
-            "/images/react.png",
-            "/images/node.png",
-            "/images/next.png",
-          ]}
+          icon={["/images/react.png", "/images/node.png", "/images/next.png"]}
           link=""
           content=""
         />
       </section>
-      <section className={styles.section}>
+      <section id="resume" className={styles.section}>
         <header>
           <h2 style={{ width: "1440px", margin: "0 auto" }}>Resume</h2>
         </header>
@@ -143,7 +139,7 @@ const Portfolio = () => {
           height={1200}
         /> */}
       </section>
-      <section className={styles.section}>
+      <section id="contact" className={styles.section}>
         <header>
           <h2 style={{ width: "1440px", margin: "0 auto" }}>Contact</h2>
         </header>

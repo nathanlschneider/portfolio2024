@@ -1,0 +1,35 @@
+nav.navlist {
+  color: var(--light);
+  position: fixed;
+  top: 85px;
+  margin: 20px;
+  user-select: none;
+  ul {
+    display: grid;
+    grid-template-rows: repeat(4, 40px);
+    grid-template-columns: 10px 1fr;
+    border-left: 2px solid var(--blue);
+    font-weight: 200;
+    gap: 20px;
+    div.nav_indicator {
+      width: 4px;
+      height: 40px;
+      background: var(--blue);
+      grid-column: 1;
+      transition: .6s;
+      position: relative;
+      top: 0px;
+      opacity: 0;
+    }
+    li {
+      grid-column: 2;
+      align-self: center;
+      transform: translateX(-10px);
+      a:any-link {
+        color: var(--light);
+        text-decoration: none;
+        transition: .6s;
+      }
+    }
+  }
+}
