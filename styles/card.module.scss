@@ -10,7 +10,7 @@ article.card {
   border-radius: 0.5cqh;
   overflow: hidden;
 
-  header {
+  header.card_header {
     grid-column: 2;
     grid-row: 1;
     display: grid;
@@ -35,7 +35,7 @@ article.card {
       display: flex;
     }
   }
-  section {
+  section.card_section {
     grid-column: 1;
     grid-row: 1;
     height: 276px;

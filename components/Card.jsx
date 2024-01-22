@@ -6,7 +6,7 @@ const Card = (props) => {
 
   return (
     <article className={styles.card}>
-      <header>
+      <header className={styles.card_header}>
         <h2>{name}</h2>
         <h3>Client: {client}</h3>
         <p>{content}</p>
@@ -26,7 +26,7 @@ const Card = (props) => {
             : null}
         </div>
       </header>
-      <section>
+      <section className={styles.card_section}>
         <Image
           className={styles.image}
           src={image}
