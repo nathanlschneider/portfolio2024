@@ -1,0 +1,13 @@
+.main {
+  height: 100dvh;
+  width: 100%;
+
+  background: var(--blue);
+  display: grid;
+  grid-template-columns: 1fr 1440px 1fr;
+  grid-template-rows: 1fr min-content 1fr;
+  svg {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}

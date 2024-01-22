@@ -1,0 +1,9 @@
+@import url('./reset.css');
+
+:root {
+  --dark-blue: #0D85DA;
+  --blue: #57B0F1;
+  --dark: #232323;
+  --gray: #E5E5E5;
+  --light: #ECECEC;
+}
