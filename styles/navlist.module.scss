@@ -16,10 +16,10 @@ nav.navlist {
       height: 40px;
       background: var(--blue);
       grid-column: 1;
-      transition: .6s;
+      transition: .1s;
       position: relative;
       top: 0px;
-      opacity: 0;
+      
     }
     li {
       grid-column: 2;
@@ -28,7 +28,6 @@ nav.navlist {
       a:any-link {
         color: var(--light);
         text-decoration: none;
-        transition: .6s;
       }
     }
   }

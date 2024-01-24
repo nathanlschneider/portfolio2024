@@ -1,16 +1,23 @@
+'use client';
+import { useRef } from "react";
 import Image from "next/image";
 import styles from "@styles/portfolio.module.scss";
 import Card from "./Card";
 import NavList from "./NavList";
 
 const Portfolio = () => {
+
+  const appsRef = useRef();
+  const sitesRef = useRef();
+  const resumeRef = useRef();
+  const contactRef = useRef();
+
+
+
   return (
     <article id="works" className={styles.main}>
-      <NavList />
-      <header>
-        <h1 style={{ width: "1440px", margin: "0 auto" }}>Works</h1>
-      </header>
-      <section id="apps" className={styles.section}>
+      <NavList appsRef={appsRef} sitesRef={sitesRef} resumeRef={resumeRef} contactRef={contactRef}/>
+      <section id="apps" ref={appsRef} className={styles.section}>
         <header className={styles.title}>
           <h2>Apps</h2>
         </header>
@@ -37,7 +44,7 @@ const Portfolio = () => {
           content="This donation app was built for NNO and it integrates with both Stripe and PayPal using JavaScript/html/scss on the front and Node and PHP on the backend"
         />
       </section>
-      <section id="sites" className={styles.section}>
+      <section id="sites" ref={sitesRef} className={styles.section}>
         <header className={styles.title}>
           <h2>Sites</h2>
         </header>
@@ -122,7 +129,7 @@ const Portfolio = () => {
           content=""
         />
       </section>
-      <section id="resume" className={styles.section}>
+      <section id="resume" ref={resumeRef} className={styles.section}>
         <header>
           <h2 style={{ width: "1440px", margin: "0 auto" }}>Resume</h2>
         </header>
@@ -139,7 +146,7 @@ const Portfolio = () => {
           height={1200}
         /> */}
       </section>
-      <section id="contact" className={styles.section}>
+      <section id="contact" ref={contactRef} style={{height: '1000px'}} className={styles.section}>
         <header>
           <h2 style={{ width: "1440px", margin: "0 auto" }}>Contact</h2>
         </header>
