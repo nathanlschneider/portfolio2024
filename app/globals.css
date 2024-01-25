@@ -10,5 +10,11 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px;
+  /* scroll-padding-top: 100px; */
+  overflow-y: auto;
+}
+
+body {
+  background: var(--dark);
+  overflow: hidden;  
 }

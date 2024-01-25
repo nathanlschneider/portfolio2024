@@ -1,14 +1,13 @@
 article.card {
-  padding: 20px;
-  gap: 20px;
   background: var(--gray);
   display: grid;
-  height: 276px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  border-radius: 1cqh;
-  border-radius: 0.5cqh;
   overflow: hidden;
+  width: 600px;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 6px;
 
   header.card_header {
     grid-column: 2;
@@ -18,14 +17,14 @@ article.card {
     color: var(--dark);
     h2 {
       font-weight: 600;
-      font-size: 2rem;
-      margin-bottom: 5px;
-        color: var(--dark);
+      color: var(--dark);
+      font-size: 1.5rem;
+      margin-bottom:6px;
     }
     h3 {
-      font-size: 1.2rem;
       font-weight: 500;
-      margin-bottom: 20px;
+      margin-bottom:20px;
+      font-size: 18px;
     }
     P {
       font-size: 1rem;
@@ -38,7 +37,6 @@ article.card {
   section.card_section {
     grid-column: 1;
     grid-row: 1;
-    height: 276px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -48,24 +46,28 @@ article.card {
       overflow: hidden;
       aspect-ratio: 2/1.5;
       background: #a9a9a9;
-      border-radius: 0.5cqh;
       object-fit: cover;
       object-position: top;
       transition: 6s;
+      border-radius: 3px;
+
       &:hover {
         object-position: bottom;
       }
     }
     .btn {
       background: var(--blue);
-      padding: 21px 0px;
       color: var(--light);
       text-align: center;
       font-weight: 600;
       text-transform: uppercase;
-      width: 100%;
-      max-width: 374px;
-      border-radius: 0.5cqh;
+      height: 40px;
+      display: grid;
+      align-content: center;
+      text-decoration: none;
+      border-radius: 3px;
+      margin-top: 10px;
+
     }
   }
 }

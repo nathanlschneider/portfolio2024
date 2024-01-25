@@ -1,15 +1,13 @@
-"use client";
+'use client';
 import styles from "@styles/hero.module.scss";
 const Hero = (props) => {
-  const handleClick = () => {
-    setTimeout(() => {
-      document.querySelector("html").style.scrollPaddingTop = "100px";
-    }, 600);
-  };
+
+const handleClick = () => {
+
+}
 
   return (
-    <a href="#works" onClick={handleClick}>
-      <article className={styles.main}>
+      <article className={styles.main} onClick={handleClick}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width={769}
@@ -36,7 +34,6 @@ const Hero = (props) => {
           </defs>
         </svg>
       </article>
-    </a>
   );
 };
 
