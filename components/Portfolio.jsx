@@ -133,12 +133,7 @@ const Portfolio = () => {
         <header>
           <h2 style={{ width: "1440px", margin: "0 auto" }}>Resume</h2>
         </header>
-        <Image
-          src="/images/resume.png"
-          alt="Resume"
-          width={900}
-          height={1200}
-        />
+        
         {/* <Image
           src="/images/resume2.png"
           alt="Resume"
