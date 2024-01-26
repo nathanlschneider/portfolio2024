@@ -4,20 +4,29 @@ article.main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1440px;
-  margin: 100px auto;
+  @media (min-width: 1440px) {
+    width: 1440px;
+    margin: 100px auto;
+  }
   background: #f0ffff1f;
   position: relative;
   border-radius: 10px;
 
   section.section {
-    display: grid;
+    @media (min-width: 1337px) {
+      display: grid;
+    }
     grid-template-columns: repeat(2, max-content);
     justify-content: center;
     padding: 100px 0px 0px;
     gap: 40px;
     header {
       grid-row: 1;
+      @media (max-width: 680px) {
+        &.title {
+          margin-left: 20px;
+        }
+      }
     }
     .contact_items {
       div {

@@ -1,15 +1,29 @@
 article.card {
   background: var(--gray);
-  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   overflow: hidden;
-  width: 600px;
+  @media (min-width: 680px) {
+    width: 600px;
+    display: grid;
+  }
   gap: 20px;
   padding: 20px;
   border-radius: 6px;
 
+  @media (max-width: 1337px) {
+    margin: 40px 0px;
+  }
+
+  @media (max-width: 680px) {
+    margin: 40px 20px;
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
   header.card_header {
+  
     grid-column: 2;
     grid-row: 1;
     display: grid;
@@ -19,11 +33,11 @@ article.card {
       font-weight: 600;
       color: var(--dark);
       font-size: 1.5rem;
-      margin-bottom:6px;
+      margin-bottom: 6px;
     }
     h3 {
       font-weight: 500;
-      margin-bottom:20px;
+      margin-bottom: 20px;
       font-size: 18px;
     }
     P {
@@ -48,8 +62,9 @@ article.card {
       background: #a9a9a9;
       object-fit: cover;
       object-position: top;
-      transition: 6s;
+      transition: 6s object-position;
       border-radius: 3px;
+      width: 100%;
 
       &:hover {
         object-position: bottom;
@@ -67,7 +82,6 @@ article.card {
       text-decoration: none;
       border-radius: 3px;
       margin-top: 10px;
-
     }
   }
 }

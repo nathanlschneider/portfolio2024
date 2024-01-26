@@ -1,4 +1,7 @@
 nav.navlist {
+  @media (max-width: 860px) {
+    display: none;
+  }
   color: var(--light);
   position: fixed;
   top: 85px;
