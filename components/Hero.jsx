@@ -1,21 +1,21 @@
 "use client";
 import styles from "@styles/hero.module.scss";
-import { useRef } from "react";
-import { motion, inView } from "framer-motion";
+import { motion } from "framer-motion";
+import { heroContainer, inLeft, inRight, inTop } from "@app/motions";
 const Hero = (props) => {
-  const ref = useRef(undefined);
-  const isInView = inView(ref);
-
   const handleClick = () => {};
 
   return (
     <article onClick={handleClick}>
       <motion.div
+        variants={heroContainer}
+        initial="initial"
+        animate="animate"
         className={styles.main}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, transition: { duration: 1 } }}
       >
-        <svg
+        <motion.svg
+        style={{marginBottom: '60px'}}
+          variants={inTop}
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 219 194"
           fill="none"
@@ -31,9 +31,19 @@ const Hero = (props) => {
               <path fill="#fff" d="M0 0h219v194H0z" />
             </clipPath>
           </defs>
-        </svg>
-        <div className={styles.name}>Nathan Schneider</div>
-        <div className={styles.title}>Full Stack Web Developer</div>
+        </motion.svg>
+        <motion.div
+          variants={inRight}
+          className={styles.name}
+        >
+          Nathan Schneider
+        </motion.div>
+        <motion.div
+          variants={inLeft}
+          className={styles.title}
+        >
+          Full Stack Web Developer
+        </motion.div>
       </motion.div>
     </article>
   );
