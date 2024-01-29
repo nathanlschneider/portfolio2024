@@ -4,9 +4,9 @@ article.main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @media (min-width: 1440px) {
-    width: 1440px;
-    margin: 100px auto;
+  @media (min-width: 90rem) {
+    width: 90rem;
+    margin: 6.25rem auto;
   }
   background: #f0ffff1f;
   position: relative;
@@ -15,57 +15,55 @@ article.main {
   section.section {
     word-wrap: break-word;
 
-    &:nth-of-type(3)
-     {
+    &:nth-of-type(3) {
       width: 100%;
-      margin: 20px !important;
+      margin: 1.25rem !important;
       img {
-        margin: 10px;
-        width: calc(100% - 40px);
+        margin: 0.625rem;
+        width: calc(100% - 2.5rem);
         height: auto;
       }
     }
 
-    @media (max-width: 1337px) {
-      
+    @media (max-width: 83.5625rem) {
       &:nth-of-type(3),
       &:nth-of-type(4) {
         width: 100%;
-        max-width: 640px;
-        margin: 20px !important;
+        max-width: 40rem;
+        margin: 1.25rem !important;
         .contact_items {
-          margin: 0px 20px;
+          margin: 0rem 1.25rem;
         }
         img {
-          margin: 10px;
-          width: calc(100% - 40px);
+          margin: 0.625rem;
+          width: calc(100% - 2.5rem);
           height: auto;
         }
       }
     }
     &:last-of-type {
-      padding-bottom: 100px;
+      padding-bottom: 6.25rem;
       min-height: auto !important;
       height: auto;
     }
 
-    @media (min-width: 1337px) {
-      max-width: 1320px;
+    @media (min-width: 83.5625rem) {
+      max-width: 82.5rem;
       display: grid;
       justify-content: flex-start;
       width: 100%;
     }
     grid-template-columns: repeat(2, max-content);
     justify-content: center;
-    padding: 100px 0px 0px;
-    gap: 40px;
+    padding: 6.25rem 0rem 0rem;
+    gap: 2.5rem;
     header {
       grid-row: 1;
-      @media (max-width: 680px) {
+      @media (max-width: 42.5rem) {
         &.title {
-          margin-left: 20px;
+          margin-left: 1.25rem;
           & + a > img {
-            margin-left: 20px;
+            margin-left: 1.25rem;
           }
         }
       }
@@ -73,7 +71,7 @@ article.main {
 
     .contact_items {
       div {
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
         font-size: 2rem;
         color: var(--light);
         a:any-link {

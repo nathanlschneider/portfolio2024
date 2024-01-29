@@ -31,14 +31,14 @@ const NavList = (props) => {
     links[3].style.fontWeight = contactInView && !resumeInView ? 600 : 200;
 
     ref.current.style.transform = appsInView
-      ? `translateY(0px)`
+      ? `translateY(0rem)`
       : sitesInView && !appsInView
-      ? `translateY(60px)`
+      ? `translateY(3.75rem)`
       : resumeInView && !sitesInView
-      ? `translateY(120px)`
+      ? `translateY(7.5rem)`
       : contactInView && !resumeInView
-      ? `translateY(180px)`
-      : `translateY(0px)`;
+      ? `translateY(11.25rem)`
+      : `translateY(0rem)`;
   }, [appsInView, sitesInView, resumeInView, contactInView]);
 
   const handleClick = (e, top) => {
@@ -52,13 +52,13 @@ const NavList = (props) => {
   return (
     <motion.nav
       className={styles.navlist}
-      initial={{ left: "-100px", opacity: 0 }}
+      initial={{ left: "-6.25rem", opacity: 0 }}
       animate={{
         left:
           (appsInView || sitesInView || resumeInView || contactInView) &&
           (scrollAmt - 600) >= appsRef.current.getBoundingClientRect().top
-            ? "0px"
-            : "-100px",
+            ? "0rem"
+            : "-6.25rem",
         opacity: 1,
       }}
     >

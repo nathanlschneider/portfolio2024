@@ -141,7 +141,7 @@ const Portfolio = () => {
         </a>
       </section>
       <section id="contact" ref={contactRef} className={styles.section}>
-      <header className={styles.title} style={{marginBottom: '40px'}}>
+      <header className={styles.title} style={{marginBottom: '2.5rem'}}>
           <h2>Contact</h2>
         </header>
         <section className={styles.contact_items}>

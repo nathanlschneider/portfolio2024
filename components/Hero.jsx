@@ -14,12 +14,12 @@ const Hero = (props) => {
         className={styles.main}
       >
         <motion.svg
-        style={{marginBottom: '60px'}}
+        style={{marginBottom: '3.75rem'}}
           variants={inTop}
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 219 194"
           fill="none"
-          width="clamp(160px, 8cqw, 200px)"
+          width="clamp(10rem, 8cqw, 12.5rem)"
           {...props}
         >
           <g fill="#E5E5E5" clipPath="url(#a)">
