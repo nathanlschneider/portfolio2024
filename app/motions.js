@@ -8,7 +8,7 @@ export const heroContainer = {
   animate: {
     transition: {
      
-      staggerChildren: .5,
+      staggerChildren: .3,
        ease: easeIn,
     },
   },

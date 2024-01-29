@@ -132,7 +132,7 @@ const Portfolio = () => {
         />
       </section>
       <section id="resume" ref={resumeRef} className={styles.section}>
-        <header className={styles.title}>
+        <header className={styles.title} style={{marginBottom: '40px'}}>
           <h2>Resume</h2>
         </header>
         <a href="/Resume.pdf" target="_blank">
@@ -140,23 +140,18 @@ const Portfolio = () => {
           <Image src="/images/resume2.png" width={200} height={300} alt="" />
         </a>
       </section>
-      <section id="contact" ref={contactRef} className={styles.section} >
-        <header>
+      <section id="contact" ref={contactRef} className={styles.section}>
+      <header className={styles.title} style={{marginBottom: '40px'}}>
           <h2>Contact</h2>
         </header>
         <section className={styles.contact_items}>
           <div>
-            Email
-            <br />
             <a href="mailto:nlschneider@gmail.com">nlschneider@gmail.com</a>
           </div>
           <div>
-            Phone
-            <br /> <a href="tel:+1(616)803-9803">+1(616)803-9803</a>
+            <a href="tel:+1(616)803-9803">+1(616)803-9803</a>
           </div>
           <div>
-            LinkedIn
-            <br />
             <a
               href="https://www.linkedin.com/in/nathanlschneider"
               target="_blank"
