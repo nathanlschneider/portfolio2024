@@ -13,6 +13,12 @@ article.main {
   border-radius: 10px;
 
   section.section {
+    &:last-of-type {
+      padding-bottom: 0px;
+      min-height: auto !important;
+      height: auto;
+     
+    }
     @media (min-width: 1337px) {
       display: grid;
     }
@@ -28,6 +34,7 @@ article.main {
         }
       }
     }
+
     .contact_items {
       div {
         margin-bottom: 30px;
@@ -40,6 +47,7 @@ article.main {
       }
     }
   }
+
   header {
     grid-column: 1 / span 2;
     grid-row: 1;

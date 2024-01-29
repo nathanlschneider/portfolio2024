@@ -13,7 +13,7 @@ const NavList = (props) => {
   const ref = useRef();
   const appsInView = useInView(appsRef, { amount: 0.1 });
   const sitesInView = useInView(sitesRef, { amount: 0.1 });
-  const resumeInView = useInView(resumeRef, { amount: 0.1 });
+  const resumeInView = useInView(resumeRef, { amount: .5 });
   const contactInView = useInView(contactRef, { amount: 0.1 });
 
   const [scrollAmt, setScrollAmt] = useState(0);
