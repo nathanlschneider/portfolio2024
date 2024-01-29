@@ -13,6 +13,8 @@ article.main {
   border-radius: 10px;
 
   section.section {
+    word-wrap: break-word;
+    
     &:last-of-type {
       padding-bottom: 0px;
       min-height: auto !important;
@@ -31,6 +33,9 @@ article.main {
       @media (max-width: 680px) {
         &.title {
           margin-left: 20px;
+          & + a > img {
+            margin-left: 20px;
+          }
         }
       }
     }
@@ -60,4 +65,8 @@ article.main {
       font-size: 4rem;
     }
   }
+}
+
+.contact_items {
+ max-width: 60dvw;
 }

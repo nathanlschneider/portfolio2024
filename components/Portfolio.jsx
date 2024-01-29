@@ -1,13 +1,11 @@
-'use client';
+"use client";
 import { useRef } from "react";
 import Image from "next/image";
 import styles from "@styles/portfolio.module.scss";
 import Card from "./Card";
 import NavList from "./NavList";
 
-
 const Portfolio = () => {
-
   const appsRef = useRef();
   const sitesRef = useRef();
   const resumeRef = useRef();
@@ -15,7 +13,12 @@ const Portfolio = () => {
 
   return (
     <article className={styles.main}>
-      <NavList appsRef={appsRef} sitesRef={sitesRef} resumeRef={resumeRef} contactRef={contactRef}/>
+      <NavList
+        appsRef={appsRef}
+        sitesRef={sitesRef}
+        resumeRef={resumeRef}
+        contactRef={contactRef}
+      />
       <section id="apps" ref={appsRef} className={styles.section}>
         <header className={styles.title}>
           <h2>Apps</h2>
@@ -128,24 +131,39 @@ const Portfolio = () => {
           content=""
         />
       </section>
-      <section id="resume" ref={resumeRef} className={styles.section} style={{width: "100%", maxWidth: '1320px', display: 'block', minHeight: '100dvh'}}>
-        <header style={{margin: "0 auto 40px" }}>
+      <section id="resume" ref={resumeRef} className={styles.section}>
+        <header className={styles.title}>
           <h2>Resume</h2>
         </header>
         <a href="/Resume.pdf" target="_blank">
-      <Image src="/images/resume.png" width={200} height={300} alt="" />
-      <Image src="/images/resume2.png" width={200} height={300} alt="" />
-
+          <Image src="/images/resume.png" width={200} height={300} alt="" />
+          <Image src="/images/resume2.png" width={200} height={300} alt="" />
         </a>
       </section>
-      <section id="contact" ref={contactRef} className={styles.section} style={{width: "100%", maxWidth: '1320px', display: 'block', paddingBottom: '100px', minHeight: '100dvh'}}>
-        <header style={{ margin: "0 auto 40px" }}>
-          <h2 >Contact</h2>
+      <section id="contact" ref={contactRef} className={styles.section} >
+        <header>
+          <h2>Contact</h2>
         </header>
-        <section className={styles.contact_items} >
-          <div>Email<br/><a href="mailto:nlschneider@gmail.com">nlschneider@gmail.com</a></div>
-          <div>Phone<br/> <a href="tel:+1(616)803-9803">+1(616)803-9803</a></div>
-          <div>LinkedIn<br/><a href="https://www.linkedin.com/in/nathanlschneider" target="_blank" >linkedin.com/in/nathanlschneider</a></div>
+        <section className={styles.contact_items}>
+          <div>
+            Email
+            <br />
+            <a href="mailto:nlschneider@gmail.com">nlschneider@gmail.com</a>
+          </div>
+          <div>
+            Phone
+            <br /> <a href="tel:+1(616)803-9803">+1(616)803-9803</a>
+          </div>
+          <div>
+            LinkedIn
+            <br />
+            <a
+              href="https://www.linkedin.com/in/nathanlschneider"
+              target="_blank"
+            >
+              linkedin.com/in/nathanlschneider
+            </a>
+          </div>
         </section>
       </section>
     </article>
