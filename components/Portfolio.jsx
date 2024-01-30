@@ -136,6 +136,7 @@ const Portfolio = () => {
           <h2>Resume</h2>
         </header>
         <a href="/Resume.pdf" target="_blank">
+          Click on the resume to download
           <Image src="/images/resume.png" width={200} height={300} alt="" />
           <Image src="/images/resume2.png" width={200} height={300} alt="" />
         </a>

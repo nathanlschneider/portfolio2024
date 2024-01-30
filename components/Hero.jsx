@@ -3,10 +3,9 @@ import styles from "@styles/hero.module.scss";
 import { motion } from "framer-motion";
 import { heroContainer, inLeft, inRight, inTop } from "@app/motions";
 const Hero = (props) => {
-  const handleClick = () => {};
 
   return (
-    <article onClick={handleClick}>
+    <article >
       <motion.div
         variants={heroContainer}
         initial="initial"
