@@ -132,7 +132,7 @@ const Portfolio = () => {
         />
       </section>
       <section id="resume" ref={resumeRef} className={styles.section}>
-        <header className={styles.title} style={{marginBottom: '40px'}}>
+        <header className={styles.title}>
           <h2>Resume</h2>
         </header>
         <a href="/Resume.pdf" target="_blank">
@@ -141,7 +141,7 @@ const Portfolio = () => {
         </a>
       </section>
       <section id="contact" ref={contactRef} className={styles.section}>
-      <header className={styles.title} style={{marginBottom: '2.5rem'}}>
+        <header className={styles.title}>
           <h2>Contact</h2>
         </header>
         <section className={styles.contact_items}>

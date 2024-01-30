@@ -2,7 +2,6 @@ import "./globals.css";
 
 import { Roboto } from "next/font/google";
 
-//👇 Configure our font object
 const roboto = Roboto({
   subsets: ["latin"],
   display: "swap",
@@ -11,7 +10,7 @@ const roboto = Roboto({
 
 export const metadata = {
   title: "Nathan Schneider: Full Stack Developer",
-  description: "Portfolio with person and profession projects",
+  description: "Portfolio for Nathan Schneider, Web Developer for hire.",
 };
 
 export default function RootLayout({ children }) {
