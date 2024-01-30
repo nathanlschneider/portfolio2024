@@ -13,7 +13,7 @@ const NavList = (props) => {
   const ref = useRef();
   const appsInView = useInView(appsRef, { amount: 0.1 });
   const sitesInView = useInView(sitesRef, { amount: 0.1 });
-  const resumeInView = useInView(resumeRef, { amount: .5 });
+  const resumeInView = useInView(resumeRef, { amount: 0.5 });
   const contactInView = useInView(contactRef, { amount: 0.1 });
 
   const [scrollAmt, setScrollAmt] = useState(0);
@@ -41,14 +41,6 @@ const NavList = (props) => {
       : `translateY(0rem)`;
   }, [appsInView, sitesInView, resumeInView, contactInView]);
 
-  const handleClick = (e, top) => {
-    const links = document.querySelectorAll("nav a");
-    links.forEach((link) => (link.style.fontWeight = 200));
-    e.target.style.fontWeight = 600;
-    ref.current.style.opacity = 1;
-    ref.current.style.transform = `translateY(${top})`;
-  };
-
   return (
     <motion.nav
       className={styles.navlist}
@@ -56,14 +48,16 @@ const NavList = (props) => {
       animate={{
         left:
           (appsInView || sitesInView || resumeInView || contactInView) &&
-          (scrollAmt - 600) >= appsRef.current.getBoundingClientRect().top
+          scrollAmt - 600 >= appsRef.current.getBoundingClientRect().top
             ? "0rem"
             : "-6.25rem",
         opacity: 1,
       }}
     >
       <ul>
-        <div ref={ref} className={styles.nav_indicator} />
+        <li>
+          <div ref={ref} className={styles.nav_indicator} />
+        </li>
         <li>
           <a href="#apps">Apps</a>
         </li>
