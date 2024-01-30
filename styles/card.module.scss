@@ -73,6 +73,7 @@ article.card {
       }
     }
     .btn {
+      border: 2px solid var(--blue);
       background: var(--blue);
       color: var(--light);
       text-align: center;
@@ -84,6 +85,11 @@ article.card {
       text-decoration: none;
       border-radius: 0.1875rem;
       margin-top: 0.625rem;
+      &:focus, &:hover {
+        border: 2px solid var(--blue);
+        background: var(--light);
+        color: var(--blue);
+      }
     }
   }
 }

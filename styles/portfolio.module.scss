@@ -103,9 +103,12 @@ article.main {
         margin-bottom: 1.875rem;
         font-size: 2rem;
         color: var(--light);
-        a:any-link {
+        a {
           color: var(--links);
           text-decoration: none;
+        }
+        a:hover, a:focus {
+          color: var(--light);
         }
       }
     }
