@@ -15,22 +15,21 @@ article.main {
 
   section.section {
     width: 100%;
-    max-width: 640px;
+    max-width: 40rem;
     min-height: 60dvh;
     & > header {
-      // margin-bottom: 40px;
       & > h2 {
-        border-bottom: 15px solid var(--blue);
+        border-bottom: 0.9375rem solid var(--blue);
         display: block;
         max-width: fit-content;
-        padding-bottom: 5px
+        padding-bottom: 0.3125rem;
       }
     }
     @media (min-width: 83.5625rem) {
       max-width: 82.5rem;
       display: grid;
       justify-content: flex-start;
-      grid-template-rows: min-content 1fr;
+      grid-template-rows: min-content min-content;
       width: 100%;
     }
     grid-template-columns: repeat(2, max-content);
