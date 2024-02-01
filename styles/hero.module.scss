@@ -3,15 +3,15 @@
   width: 100%;
   position: relative;
   z-index: 100;
-
   background: var(--blue);
   display: grid;
-  // grid-template-columns: 1fr 90rem 1fr;
+  grid-template-columns: 1fr 90rem 1fr;
   grid-template-rows: 1fr repeat(3, min-content) 1fr;
   svg {
     transform: translateY(-3.75rem);
     grid-column: 2;
     grid-row: 2;
+    margin-left: 75px;
   }
 
   .name {
@@ -20,6 +20,8 @@
     font-size: clamp(1.5rem, 11cqw, 6rem);
     grid-column: 2;
     grid-row: 3;
+    margin-left: 75px;
+
   }
   .title {
     color: var(--dark);
@@ -27,5 +29,7 @@
     font-size: clamp(1.125rem, 7cqw, 3rem);
     grid-column: 2;
     grid-row: 4;
+    margin-left: 75px;
+
   }
 }

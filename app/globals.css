@@ -18,3 +18,13 @@ body {
   background: var(--dark);
   overflow: hidden;  
 }
+
+h1 {
+  font-size: clamp(1.5rem, 11cqw, 6rem) !important
+}
+
+a:any-link {
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}

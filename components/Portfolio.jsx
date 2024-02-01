@@ -19,8 +19,10 @@ const Portfolio = () => {
         resumeRef={resumeRef}
         contactRef={contactRef}
       />
+      <header className={styles.title}></header>
       <section id="apps" ref={appsRef} className={styles.section}>
         <header className={styles.title}>
+        <h1  style={{marginBottom: '100px'}}>My Works</h1>
           <h2>Apps</h2>
         </header>
         <Card

@@ -4,6 +4,7 @@ article.main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   @media (min-width: 90rem) {
     width: 90rem;
     margin: 6.25rem auto;
@@ -13,77 +14,26 @@ article.main {
   border-radius: 0.625rem;
 
   section.section {
-    word-wrap: break-word;
-    &:nth-of-type(3) {
-      a:any-link {
-        text-align: center;
-        color: #fff;
-        text-decoration: none;
-      }
-      &:nth-of-type(3),
-      &:nth-of-type(4) {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin: 1.25rem !important;
-        a {
-          display: flex;
-          gap: 2.5rem;
-          flex-direction: column;
-          justify-content: center;
-          // align-items: center;
-        }
-        div {
-          display: inherit;
-          gap: inherit;
-          @media (max-width: 43.125rem) {
-            flex-direction: column;
-          }
-        }
-
-        img {
-          // margin: 0.625rem;
-          // width: calc(100% - 2.5rem);
-          @media (min-width: 43.125rem) {
-            width: 50%;
-          }
-          height: auto;
-        }
+    width: 100%;
+    max-width: 640px;
+    min-height: 60dvh;
+    & > header {
+      // margin-bottom: 40px;
+      & > h2 {
+        border-bottom: 15px solid var(--blue);
+        display: block;
+        max-width: fit-content;
+        padding-bottom: 5px
       }
     }
-
-    @media (max-width: 83.5625rem) {
-      &:nth-of-type(3),
-      &:nth-of-type(4) {
-        width: 100%;
-        max-width: 40rem;
-        margin: 1.25rem !important;
-        .contact_items {
-          margin: 0rem 1.25rem;
-        }
-        div {
-          img {
-            margin: 0 auto;
-            width: calc(100% - 2.5rem);
-            height: auto;
-          }
-        }
-      }
-    }
-    &:last-of-type {
-      padding-bottom: 6.25rem;
-      min-height: auto !important;
-      height: auto;
-    }
-
     @media (min-width: 83.5625rem) {
       max-width: 82.5rem;
       display: grid;
       justify-content: flex-start;
+      grid-template-rows: min-content 1fr;
       width: 100%;
     }
     grid-template-columns: repeat(2, max-content);
-    justify-content: center;
     padding: 6.25rem 0rem 0rem;
     gap: 2.5rem;
     header {
@@ -104,11 +54,12 @@ article.main {
         font-size: 2rem;
         color: var(--light);
         a {
-          color: var(--links);
+          color: var(--light);
           text-decoration: none;
         }
-        a:hover, a:focus {
-          color: var(--light);
+        a:hover,
+        a:focus {
+          color: var(--links);
         }
       }
     }
