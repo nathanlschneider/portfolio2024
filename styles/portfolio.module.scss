@@ -1,5 +1,5 @@
 article.main {
-  min-height: 100dvh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,7 +16,7 @@ article.main {
   section.section {
     width: 100%;
     max-width: 40rem;
-    min-height: 60dvh;
+    min-height: 60vh;
     & > header {
       & > h2 {
         border-bottom: 0.75rem solid var(--blue);
