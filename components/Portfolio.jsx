@@ -29,7 +29,7 @@ const Portfolio = () => {
           name="Find My Cones"
           client="Hyser Asphalt"
           image="/images/phones.png"
-          icon={["/images/react.png", "/images/node.png", "/images/play.png"]}
+          icon={["/images/react.png", "/images/node.png", "/images/mysql.png" ,"/images/play.png"]}
           link="app.findmycones.com"
           content=""
         />
@@ -43,6 +43,7 @@ const Portfolio = () => {
             "/images/php.png",
             "/images/stripe.png",
             "/images/paypal.png",
+            "/images/mailchimp.png" 
           ]}
           link="nativenewsonline.net/donate"
           content="This donation app was built for NNO and it integrates with both Stripe and PayPal using JavaScript/html/scss on the front and Node and PHP on the backend"
@@ -60,6 +61,7 @@ const Portfolio = () => {
             "/images/joomla.png",
             "/images/javascript.png",
             "/images/php.png",
+            "/images/mysql.png"
           ]}
           link="proos.com"
           content="This project was built on Joomla, using basic HTML/SCSS/JS to style the theme for the front-end."
@@ -72,6 +74,7 @@ const Portfolio = () => {
             "/images/wordpress.png",
             "/images/javascript.png",
             "/images/php.png",
+            "/images/mysql.png"
           ]}
           link="resthaven.org"
           content="This project was built on WordPress, using basic HTML/SCSS/JS to style the theme for the front-end."
@@ -80,7 +83,7 @@ const Portfolio = () => {
           name="Ajacs"
           client="Mark Wierenga"
           image="/images/ajacs.png"
-          icon={["/images/joomla.png", "/images/php.png"]}
+          icon={["/images/joomla.png", "/images/php.png",  "/images/mysql.png" ]}
           link="ajacs.com"
           content="This project was built on Joomla, using basic HTML/SCSS/JS to style the theme for the front-end."
         />
@@ -92,6 +95,7 @@ const Portfolio = () => {
             "/images/joomla.png",
             "/images/javascript.png",
             "/images/php.png",
+            "/images/mysql.png"
           ]}
           link="nativenewsonlune.net"
           content="This project was built on Joomla, using basic HTML/SCSS/JS to style the theme for the front-end."
@@ -100,7 +104,7 @@ const Portfolio = () => {
           name="Holland Charter Township"
           client="City of Holland, MI"
           image="/images/hct.png"
-          icon={["/images/joomla.png", "/images/php.png"]}
+          icon={["/images/joomla.png", "/images/php.png",  "/images/mysql.png" ]}
           link="hct.holland.mi.us"
           content=""
         />
@@ -112,6 +116,7 @@ const Portfolio = () => {
             "/images/joomla.png",
             "/images/javascript.png",
             "/images/php.png",
+            "/images/mysql.png" 
           ]}
           link="usehughes.com"
           content=""
@@ -120,7 +125,7 @@ const Portfolio = () => {
           name="Whirlwind Engineering"
           client="Steve Cencich"
           image="/images/whirlwind.png"
-          icon={["/images/joomla.png", "/images/php.png"]}
+          icon={["/images/joomla.png", "/images/php.png" , "/images/mysql.png" ]}
           link="whirlwindeng.com"
           content=""
         />
