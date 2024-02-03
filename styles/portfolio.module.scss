@@ -4,20 +4,29 @@ article.main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  @media (min-width: 90rem) {
-    width: 90rem;
-    margin: 6.25rem auto;
-  }
   background: #f0ffff1f;
   position: relative;
   border-radius: 0.625rem;
-
   section.section {
-    width: 100%;
-    max-width: 40rem;
-    min-height: 60vh;
+    width: calc(100% - 6rem);
+    max-width: 1440px;
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-rows: min-content min-content;
+      min-height: 60vh;
+      gap: 3rem;
+    }
+    margin: 3rem;
     & > header {
+      grid-row: 1;
+      grid-column: 1 / span 2;
+      h1,
+      h2 {
+        color: var(--gray);
+        font-weight: 600;
+        line-height: 1;
+        font-size: 4rem;
+      }
       & > h2 {
         border-bottom: 0.75rem solid var(--blue);
         display: block;
@@ -25,32 +34,28 @@ article.main {
         padding-bottom: 0.3125rem;
       }
     }
-    @media (min-width: 83.5625rem) {
-      max-width: 82.5rem;
-      display: grid;
-      justify-content: flex-start;
-      grid-template-rows: min-content min-content;
+    @media (max-width: 68.75rem) {
+      width: calc(100vw - 6rem);
+    }
+    .resume_page {
+      font-size: clamp(2rem, 5cqw, 4rem);
+      margin: 3rem 0 0 0;
+      text-align: left;
+    }
+    .image {
       width: 100%;
+      height: auto;
+      margin: 3rem auto 0rem;
     }
-    grid-template-columns: repeat(2, max-content);
-    padding: 6.25rem 0rem 0rem;
-    gap: 2.5rem;
-    header {
-      grid-row: 1;
-      @media (max-width: 42.5rem) {
-        &.title {
-          margin-left: 1.25rem;
-          & + a > img {
-            margin-left: 1.25rem;
-          }
-        }
-      }
-    }
-
     .contact_items {
+      max-width: 60dvw;
+
       div {
-        margin-bottom: 1.875rem;
-        font-size: 2rem;
+       &:first-of-type {
+        margin-top: 3rem;
+       }
+       margin-bottom: 2rem;
+        font-size: clamp(1rem, 5cqw, 4rem);
         color: var(--light);
         a {
           color: var(--light);
@@ -63,21 +68,4 @@ article.main {
       }
     }
   }
-
-  header {
-    grid-column: 1 / span 2;
-    grid-row: 1;
-
-    h1,
-    h2 {
-      color: var(--gray);
-      font-weight: 600;
-      line-height: 1;
-      font-size: 4rem;
-    }
-  }
-}
-
-.contact_items {
-  max-width: 60dvw;
 }

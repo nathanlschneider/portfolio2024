@@ -13,23 +13,28 @@ const Portfolio = () => {
 
   return (
     <article className={styles.main}>
-      <NavList
+      {/* <NavList
         appsRef={appsRef}
         sitesRef={sitesRef}
         resumeRef={resumeRef}
         contactRef={contactRef}
-      />
+      /> */}
       <header className={styles.title}></header>
       <section id="apps" ref={appsRef} className={styles.section}>
         <header className={styles.title}>
-        <h1  style={{marginBottom: '100px'}}>My Works</h1>
+          <h1 style={{ marginBottom: "6rem" }}>My Works</h1>
           <h2>Apps</h2>
         </header>
         <Card
           name="Find My Cones"
           client="Hyser Asphalt"
           image="/images/phones.png"
-          icon={["/images/react.png", "/images/node.png", "/images/mysql.png" ,"/images/play.png"]}
+          icon={[
+            "/images/react.png",
+            "/images/node.png",
+            "/images/mysql.png",
+            "/images/play.png",
+          ]}
           link="app.findmycones.com"
           content=""
         />
@@ -43,7 +48,7 @@ const Portfolio = () => {
             "/images/php.png",
             "/images/stripe.png",
             "/images/paypal.png",
-            "/images/mailchimp.png" 
+            "/images/mailchimp.png",
           ]}
           link="nativenewsonline.net/donate"
           content="This donation app was built for NNO and it integrates with both Stripe and PayPal using JavaScript/html/scss on the front and Node and PHP on the backend"
@@ -61,7 +66,7 @@ const Portfolio = () => {
             "/images/joomla.png",
             "/images/javascript.png",
             "/images/php.png",
-            "/images/mysql.png"
+            "/images/mysql.png",
           ]}
           link="proos.com"
           content="This project was built on Joomla, using basic HTML/SCSS/JS to style the theme for the front-end."
@@ -74,7 +79,7 @@ const Portfolio = () => {
             "/images/wordpress.png",
             "/images/javascript.png",
             "/images/php.png",
-            "/images/mysql.png"
+            "/images/mysql.png",
           ]}
           link="resthaven.org"
           content="This project was built on WordPress, using basic HTML/SCSS/JS to style the theme for the front-end."
@@ -83,7 +88,7 @@ const Portfolio = () => {
           name="Ajacs"
           client="Mark Wierenga"
           image="/images/ajacs.png"
-          icon={["/images/joomla.png", "/images/php.png",  "/images/mysql.png" ]}
+          icon={["/images/joomla.png", "/images/php.png", "/images/mysql.png"]}
           link="ajacs.com"
           content="This project was built on Joomla, using basic HTML/SCSS/JS to style the theme for the front-end."
         />
@@ -95,7 +100,7 @@ const Portfolio = () => {
             "/images/joomla.png",
             "/images/javascript.png",
             "/images/php.png",
-            "/images/mysql.png"
+            "/images/mysql.png",
           ]}
           link="nativenewsonlune.net"
           content="This project was built on Joomla, using basic HTML/SCSS/JS to style the theme for the front-end."
@@ -104,7 +109,7 @@ const Portfolio = () => {
           name="Holland Charter Township"
           client="City of Holland, MI"
           image="/images/hct.png"
-          icon={["/images/joomla.png", "/images/php.png",  "/images/mysql.png" ]}
+          icon={["/images/joomla.png", "/images/php.png", "/images/mysql.png"]}
           link="hct.holland.mi.us"
           content=""
         />
@@ -116,7 +121,7 @@ const Portfolio = () => {
             "/images/joomla.png",
             "/images/javascript.png",
             "/images/php.png",
-            "/images/mysql.png" 
+            "/images/mysql.png",
           ]}
           link="usehughes.com"
           content=""
@@ -125,7 +130,7 @@ const Portfolio = () => {
           name="Whirlwind Engineering"
           client="Steve Cencich"
           image="/images/whirlwind.png"
-          icon={["/images/joomla.png", "/images/php.png" , "/images/mysql.png" ]}
+          icon={["/images/joomla.png", "/images/php.png", "/images/mysql.png"]}
           link="whirlwindeng.com"
           content=""
         />
@@ -142,12 +147,35 @@ const Portfolio = () => {
         <header className={styles.title}>
           <h2>Resume</h2>
         </header>
-        <a href="/Resume.pdf" target="_blank">
-          <div>Click on the resume to download</div>
-          <div>
-            <Image src="/images/resume.png" width={200} height={300} alt="" />
-            <Image src="/images/resume2.png" width={200} height={300} alt="" />
-          </div>
+        <a
+          className={styles.resume_link}
+          style={{ gridColumn: 1 }}
+          href="/Resume.pdf"
+          target="_blank"
+        >
+          <div className={styles.resume_page}>Page 1</div>
+          <Image
+            className={styles.image}
+            src="/images/resume.png"
+            width={200}
+            height={300}
+            alt=""
+          />
+        </a>
+        <a
+          className={styles.resume_link}
+          style={{ gridColumn: 2 }}
+          href="/Resume.pdf"
+          target="_blank"
+        >
+          <div className={styles.resume_page}>Page 2</div>
+          <Image
+            className={styles.image}
+            src="/images/resume2.png"
+            width={200}
+            height={300}
+            alt=""
+          />
         </a>
       </section>
       <section id="contact" ref={contactRef} className={styles.section}>
