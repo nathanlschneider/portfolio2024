@@ -2,13 +2,13 @@ import Image from "next/image";
 import styles from "@styles/card.module.scss";
 
 const Card = (props) => {
-  const { client, name, content, image, link, icon, logoAlt } = props;
+  const { client, name, content, image, link, icon, logoAlt, scroll } = props;
 
   return (
     <article className={styles.card}>
       <header className={styles.card_header}>
         <h2>{name}</h2>
-        <h3>Client: {client}</h3>
+        <h3>{client && `Client: ${client}`}</h3>
         <p>{content}</p>
         <div className={styles.logo_group}>
           {typeof icon === "object"
@@ -29,10 +29,11 @@ const Card = (props) => {
       <section className={styles.card_section}>
         <Image
           className={styles.image}
-          src={image}
+          src={image ? image : '/images/n.png'}
           alt={name}
           width={374}
           height={200}
+          style={{ objectFit: scroll == false ? 'fill' : 'cover'}}
         />
         <a href={`https://${link}/`} target="_blank" className={styles.btn}>
           Open
