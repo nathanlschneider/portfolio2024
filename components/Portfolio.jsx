@@ -36,7 +36,7 @@ const Portfolio = () => {
             "/images/play.png",
           ]}
           link="app.findmycones.com"
-          content=""
+          content="This donation app was built for NNO and it integrates with both Stripe and PayPal using JavaScript/html/scss on the front and Node and PHP on the backend"
         />
         <Card
           name="Donation Form"

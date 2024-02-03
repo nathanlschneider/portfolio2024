@@ -5,8 +5,8 @@
   z-index: 100;
   background: var(--blue);
   display: grid;
-  gap: 0px 3rem;
-  grid-template-columns: 1fr minmax(auto, 1440px) 1fr;
+  gap: 0rem var(--gap);
+  grid-template-columns: 1fr minmax(auto, 90rem) 1fr;
   grid-template-rows: 1fr repeat(3, min-content) 1fr;
   svg {
     transform: translateY(-3.75rem);
@@ -25,7 +25,7 @@
   .title {
     color: var(--dark);
     font-weight: 300;
-    font-size: clamp(1.125rem, 7cqw, 3rem);
+    font-size: clamp(1.125rem, 7cqw, var(--gap));
     grid-column: 2;
     grid-row: 4;
   }
