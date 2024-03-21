@@ -149,7 +149,7 @@ const Portfolio = () => {
             "/images/php.png",
             "/images/mysql.png",
           ]}
-          link="nativenewsonlune.net"
+          link="nativenewsonline.net"
           content="This project was built on Joomla, using HTML/SCSS/JS to style the theme for the front-end, PHP and MySQL on the back-end."
         />
         <Card
@@ -171,7 +171,7 @@ const Portfolio = () => {
             "/images/php.png",
             "/images/mysql.png",
           ]}
-          link="usehughes.com"
+          link="usehugheshg.com"
           content="This project was built on Joomla, using HTML/SCSS/JS to style the theme for the front-end, PHP and MySQL on the back-end."
         />
         <Card
