@@ -1,5 +1,5 @@
 article.main {
-  padding-top:4rem;
+  padding-top: 4rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -52,10 +52,10 @@ article.main {
       max-width: 60dvw;
 
       div {
-       &:first-of-type {
-        margin-top: var(--gap);
-       }
-       margin-bottom: 2rem;
+        &:first-of-type {
+          margin-top: var(--gap);
+        }
+        margin-bottom: 2rem;
         font-size: clamp(1rem, 5cqw, 4rem);
         color: var(--light);
         a {

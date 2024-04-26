@@ -30,7 +30,6 @@ const Portfolio = () => {
           client="Hyser Asphalt"
           image="/images/phones.png"
           scroll={false}
-
           icon={[
             "/images/react.png",
             "/images/node.png",
@@ -46,7 +45,6 @@ const Portfolio = () => {
           client="Native News Online"
           image="/images/donation_phones.png"
           scroll={false}
-
           icon={[
             "/images/javascript.png",
             "/images/sass.png",
@@ -64,7 +62,7 @@ const Portfolio = () => {
           client=""
           image=""
           scroll={false}
-          icon={["/images/javascript.png","/images/sass.png"]}
+          icon={["/images/javascript.png", "/images/sass.png"]}
           link="github.com/nathanlschneider/ticket_viewer"
           content="This is a companion progressive web app for IvantiSM to view Help Desk incident tickets on
           mobile devices. It s being used by operations and
@@ -75,7 +73,13 @@ const Portfolio = () => {
           client=""
           image="/images/cradle.png"
           scroll={false}
-          icon={["/images/react.png", "/images/sass.png", "/images/node.png","/images/mongodb.svg", "/images/websoket.webp"]}
+          icon={[
+            "/images/react.png",
+            "/images/sass.png",
+            "/images/node.png",
+            "/images/mongodb.svg",
+            "/images/websoket.webp",
+          ]}
           link="github.com/nathanlschneider/react-cradlepoint_watcher"
           content="This app monitors the WAN/LTE status of several hundred Cradlepoint WiFi routers deployed at various Wendy's locations across the country. It has allowed the company to track LTE usage and save money on unnecessary LTE costs."
         />
@@ -134,7 +138,12 @@ const Portfolio = () => {
           name="Ajacs"
           client="Mark Wierenga"
           image="/images/ajacs.png"
-          icon={["/images/joomla.png", "/images/php.png", "/images/mysql.png", "/images/sass.png"]}
+          icon={[
+            "/images/joomla.png",
+            "/images/php.png",
+            "/images/mysql.png",
+            "/images/sass.png",
+          ]}
           link="ajacs.com"
           content="This project was built on Joomla, using HTML/SCSS/JS to style the theme for the front-end, PHP and MySQL on the back-end."
         />
@@ -156,7 +165,13 @@ const Portfolio = () => {
           name="Holland Charter Township"
           client="City of Holland, MI"
           image="/images/hct.png"
-          icon={["/images/joomla.png", "/images/javascript.png","/images/sass.png","/images/php.png", "/images/mysql.png"]}
+          icon={[
+            "/images/joomla.png",
+            "/images/javascript.png",
+            "/images/sass.png",
+            "/images/php.png",
+            "/images/mysql.png",
+          ]}
           link="hct.holland.mi.us"
           content="This project was built on Joomla, using HTML/SCSS/JS to style the theme for the front-end, PHP and MySQL on the back-end."
         />
@@ -178,7 +193,13 @@ const Portfolio = () => {
           name="Whirlwind Engineering"
           client="Steve Cencich"
           image="/images/whirlwind.png"
-          icon={["/images/joomla.png", "/images/javascript.png","/images/sass.png","/images/php.png", "/images/mysql.png"]}
+          icon={[
+            "/images/joomla.png",
+            "/images/javascript.png",
+            "/images/sass.png",
+            "/images/php.png",
+            "/images/mysql.png",
+          ]}
           link="whirlwindeng.com"
           content="This project was built on Joomla, using HTML/SCSS/JS to style the theme for the front-end, PHP and MySQL on the back-end."
         />
@@ -186,7 +207,12 @@ const Portfolio = () => {
           name="Quirkable.io"
           client="Quirkable"
           image="/images/quirkable.png"
-          icon={["/images/react.png",  "/images/next.png", "/images/sass.png", "/images/node.png"]}
+          icon={[
+            "/images/react.png",
+            "/images/next.png",
+            "/images/sass.png",
+            "/images/node.png",
+          ]}
           link=""
           content="This project was build using Next, Node and React."
         />
@@ -195,36 +221,12 @@ const Portfolio = () => {
         <header className={styles.title}>
           <h2>Resume</h2>
         </header>
-        <a
-          className={styles.resume_link}
-          style={{ gridColumn: 1 }}
-          href="/Resume.pdf"
-          target="_blank"
-        >
-          <div className={styles.resume_page}>Page 1</div>
-          <Image
-            className={styles.image}
-            src="/images/resume.png"
-            width={200}
-            height={300}
-            alt=""
-          />
-        </a>
-        <a
-          className={styles.resume_link}
-          style={{ gridColumn: 2 }}
-          href="/Resume.pdf"
-          target="_blank"
-        >
-          <div className={styles.resume_page}>Page 2</div>
-          <Image
-            className={styles.image}
-            src="/images/resume2.png"
-            width={200}
-            height={300}
-            alt=""
-          />
-        </a>
+        <div>
+          {" "}
+          <a href="/Resume.docx" target="_blank" style={{fontSize: "3rem"}}>
+            Click to download.
+          </a>
+        </div>
       </section>
       <section id="contact" ref={contactRef} className={styles.section}>
         <header className={styles.title}>
