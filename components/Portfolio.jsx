@@ -213,7 +213,7 @@ const Portfolio = () => {
             "/images/sass.png",
             "/images/node.png",
           ]}
-          link=""
+          link="https://quirkable-io.vercel.app/"
           content="This project was build using Next, Node and React."
         />
       </section>
